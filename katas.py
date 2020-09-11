@@ -1,3 +1,14 @@
+
+
+__author__ = """
+stephguirand
+Help from demo, lessons and activities, youtube videos in canvas and
+own search on youtube,
+stack overflow, Tutors, Facilitators and talking about assignment
+in study group.
+"""
+
+
 def add(x, y):
     """Return the result of adding x to y."""
     return x + y
