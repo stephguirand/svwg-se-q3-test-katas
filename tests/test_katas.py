@@ -25,7 +25,11 @@ class TestKatas(unittest.TestCase):
         self.assertEqual(katas.factorial(2), math.factorial(2))
 
     def test_fibonacci(self):
-        self.assertEqual(katas.fibonacci(9), 21)
+        self.assertIsNotNone(katas.fibonacci)
+        # self.assertEqual(katas.fibonacci(34), 21)
+        fibs = (-1, 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89)
+        for n in range(12):
+            self.assertEqual(katas.fibonacci(n), fibs[n])
 
 
 if __name__ == '__main__':
